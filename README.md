@@ -4,7 +4,7 @@
 
 ### Hash routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
 
-Bespoke-hash automatically generates numbered hash routes for your slides.
+Automatically generate numbered hash routes for your Bespoke.js presentation slides.
 
 ## Download
 
