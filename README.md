@@ -24,10 +24,9 @@ bespoke.horizontal.from(selector, {
   hash: true
 });
 ```
+Starting from `#1`, all routes are numbered by default.
 
 ### Named Routes
-
-By default, all routes are numbered starting from 1.
 
 If you'd like to use named hash routes instead, add `data-bespoke-hash` attributes to your slide markup.
 
