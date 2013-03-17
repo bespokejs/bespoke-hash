@@ -2,7 +2,7 @@
 
 # bespoke-hash
 
-### Hash routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
+### Hash Routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
 
 Automatically generate hash routes for your Bespoke.js presentation slides.
 
