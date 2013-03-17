@@ -40,6 +40,8 @@ If you'd like to use named hash routes instead, add `data-bespoke-hash` attribut
 </article>
 ```
 
+*Note: Named and unnamed routes can be used simultaneously.*
+
 ## Questions?
 
 Contact me on GitHub or Twitter: [@markdalgleish](http://twitter.com/markdalgleish)
