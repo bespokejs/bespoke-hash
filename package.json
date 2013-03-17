@@ -1,7 +1,7 @@
 {
   "name": "bespoke-hash",
   "title": "bespoke-hash",
-  "version": "0.0.1-alpha-1",
+  "version": "0.0.1-alpha-2",
   "description": "Hash routing for Bespoke.js",
   "author": {
     "name": "Mark Dalgleish",

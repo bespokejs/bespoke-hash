@@ -4,7 +4,7 @@
 
 ### Hash routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
 
-Automatically generate numbered hash routes for your Bespoke.js presentation slides.
+Automatically generate hash routes for your Bespoke.js presentation slides.
 
 ## Download
 
@@ -23,6 +23,22 @@ Then, simply include the plugin when using the `from(selector[, plugins])` metho
 bespoke.horizontal.from(selector, {
   hash: true
 });
+```
+
+### Named Routes
+
+By default, all routes are numbered starting from 1.
+
+If you'd like to use named hash routes instead, add `data-bespoke-hash` attributes to your slide markup.
+
+```html
+<article>
+  <section data-bespoke-hash="catchy-title"></section>
+  <section data-bespoke-hash="shameless-plug"></section>
+  <section data-bespoke-hash="controversial-statement"></section>
+  <section data-bespoke-hash="explanation-of-controversial-statement"></section>
+  <section data-bespoke-hash="shameless-self-promotion"></section>
+</article>
 ```
 
 ## Questions?
