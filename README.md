@@ -10,8 +10,8 @@ Automatically generate hash routes for your Bespoke.js presentation slides.
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/markdalgleish/bespoke.js/master/dist/bespoke-hash.min.js
-[max]: https://raw.github.com/markdalgleish/bespoke.js/master/dist/bespoke-hash.js
+[min]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.min.js
+[max]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.js
 
 ## Usage
 
