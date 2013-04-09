@@ -1,5 +1,5 @@
 /*!
- * Bespoke.js v0.0.1-alpha-16
+ * Bespoke.js v0.1.1
  *
  * Copyright 2013, Mark Dalgleish
  * This content is released under the MIT license
@@ -46,6 +46,13 @@
 						['inactive', offsetClass, offsetClass + '-' + Math.abs(offset)].map(addClass.bind(null, slide));
 				},
 
+				slide = function(index) {
+					fire(deckListeners, 'slide', {
+						slide: slides[index],
+						index: index
+					}) && activate(index);
+				},
+
 				next = function() {
 					var nextSlideIndex = slides.indexOf(activeSlide) + 1;
 
@@ -67,14 +74,13 @@
 				deck = {
 					on: on.bind(null, deckListeners),
 					off: off.bind(null, deckListeners),
-					slide: activate,
+					fire: fire.bind(null, deckListeners),
+					slide: slide,
 					next: next,
 					prev: prev,
 					parent: parent,
 					slides: slides
 				};
-
-			activate(0);
 
 			addClass(parent, 'parent');
 			
@@ -86,6 +92,8 @@
 				var config = selectedPlugins[pluginName];
 				config && plugins[pluginName](deck, config === true ? {} : config);
 			});
+
+			activate(0);
 
 			decks.push(deck);
 
@@ -192,8 +200,7 @@
 		vertical: bindPlugin('vertical'),
 		on: on.bind(null, bespokeListeners),
 		off: off.bind(null, bespokeListeners),
-		plugins: plugins,
-		decks: decks
+		plugins: plugins
 	};
 
 }('bespoke', this, document));

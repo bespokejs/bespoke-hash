@@ -29,6 +29,9 @@
 				deck = bespoke.from(PARENT_TAG, {
 					hash: true
 				});
+
+				// Wait for next tick
+				waits(0);
 			},
 			destroyDeck = function() {
 				document.body.removeChild(article);
