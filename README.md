@@ -13,6 +13,14 @@ Download the [production version][min] or the [development version][max].
 [min]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.min.js
 [max]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.js
 
+### Bower
+
+Bespoke-hash can be installed from [Bower](http://twitter.github.com/bower/) using the following command:
+
+```bash
+$ bower install bespoke-hash
+```
+
 ## Usage
 
 First, include both `bespoke.js` and `bespoke-hash.js` in your page.
