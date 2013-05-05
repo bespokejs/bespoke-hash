@@ -1,0 +1,8 @@
+{
+  "name": "bespoke-hash",
+  "version": "0.1.0",
+  "main": "./dist/bespoke-hash.min.js",
+  "ignore": [
+    "**/.*"
+  ]
+}
