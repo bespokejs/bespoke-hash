@@ -28,7 +28,7 @@ First, include both `bespoke.js` and `bespoke-hash.js` in your page.
 Then, simply include the plugin when using the `from(selector[, plugins])` method.
 
 ```js
-bespoke.horizontal.from(selector, {
+bespoke.from(selector, {
   hash: true
 });
 ```

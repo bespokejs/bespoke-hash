@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       src: [
         'libs/es5-shim/es5-shim.js',
         'libs/sinon/sinon.js',
-        'libs/bespoke/bespoke.js',
+        'node_modules/bespoke/dist/bespoke.js',
         'src/**/*.js'
       ],
       specs: 'specs/**/*_spec.js'

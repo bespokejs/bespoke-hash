@@ -24,7 +24,8 @@
   "devDependencies": {
     "grunt": "~0.3.17",
     "grunt-jasmine-runner": "~0.6.0",
-    "temporary": "0.0.5"
+    "temporary": "0.0.5",
+    "bespoke": "~0.4.0"
   },
   "licenses": [
     {
