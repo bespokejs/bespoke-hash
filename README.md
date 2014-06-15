@@ -1,37 +1,39 @@
-[![Build Status](https://secure.travis-ci.org/markdalgleish/bespoke-hash.png)](http://travis-ci.org/markdalgleish/bespoke-hash)
+[![Build Status](https://secure.travis-ci.org/markdalgleish/bespoke-hash.png?branch=master)](https://travis-ci.org/markdalgleish/bespoke-hash) [![Coverage Status](https://coveralls.io/repos/markdalgleish/bespoke-hash/badge.png)](https://coveralls.io/r/markdalgleish/bespoke-hash)
 
 # bespoke-hash
 
-### Hash Routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
-
-Automatically generate hash routes for your Bespoke.js presentation slides.
+Hash Routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
 
 ## Download
 
-Download the [production version][min] or the [development version][max].
+Download the [production version][min] or the [development version][max], or use a [package manager](#package-managers).
 
 [min]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.min.js
 [max]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.js
 
-### Bower
-
-Bespoke-hash can be installed from [Bower](http://twitter.github.com/bower/) using the following command:
-
-```bash
-$ bower install bespoke-hash
-```
-
 ## Usage
 
-First, include both `bespoke.js` and `bespoke-hash.js` in your page.
+This plugin is shipped in a [UMD format](https://github.com/umdjs/umd), meaning that it is available as a CommonJS/AMD module or browser global.
 
-Then, simply include the plugin when using the `from(selector[, plugins])` method.
+For example, when using CommonJS modules:
 
 ```js
-bespoke.from(selector, {
-  hash: true
-});
+var bespoke = require('bespoke'),
+  hash = require('bespoke-hash');
+
+bespoke.from('article', [
+  hash()
+]);
 ```
+
+When using browser globals:
+
+```js
+bespoke.from('article', [
+  bespoke.plugins.hash()
+]);
+```
+
 Starting from `#1`, all routes are numbered by default.
 
 ### Named Routes
@@ -48,14 +50,24 @@ If you'd like to use named hash routes instead, add `data-bespoke-hash` attribut
 </article>
 ```
 
-*Note: Named and unnamed routes can be used simultaneously.*
+## Package managers
 
-## Questions?
+### npm
 
-Contact me on GitHub or Twitter: [@markdalgleish](http://twitter.com/markdalgleish)
+```bash
+$ npm install bespoke-hash
+```
+
+### Bower
+
+```bash
+$ bower install bespoke-hash
+```
+
+## Credits
+
+This plugin was built with [generator-bespokeplugin](https://github.com/markdalgleish/generator-bespokeplugin).
 
 ## License
 
-Copyright 2013, Mark Dalgleish  
-This content is released under the MIT license  
-http://markdalgleish.mit-license.org
+[MIT License](http://en.wikipedia.org/wiki/MIT_License)
