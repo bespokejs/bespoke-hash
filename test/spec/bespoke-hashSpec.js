@@ -52,7 +52,7 @@ describe("bespoke-hash", function() {
       afterEach(destroyDeck);
 
       it("should activate the slide referenced in the hash", function() {
-        expect(deck.slides[this.activeSlideN - 1].classList.contains('bespoke-active')).toBe(true);
+        expect(deck.slide()).toBe(this.activeSlideN - 1);
       });
 
     });
@@ -71,7 +71,7 @@ describe("bespoke-hash", function() {
       afterEach(destroyDeck);
 
       it("should activate the slide referenced in the hash", function() {
-        expect(deck.slides[NAMED_SLIDE_INDEX].classList.contains('bespoke-active')).toBe(true);
+        expect(deck.slide()).toBe(NAMED_SLIDE_INDEX);
       });
 
     });
@@ -123,7 +123,7 @@ describe("bespoke-hash", function() {
       });
 
       it("should activate the slide referenced in the hash", function() {
-        expect(deck.slides[activeSlideN - 1].classList.contains('bespoke-active')).toBe(true);
+        expect(deck.slide()).toBe(activeSlideN - 1);
       });
 
     });
@@ -140,7 +140,7 @@ describe("bespoke-hash", function() {
       });
 
       it("should activate the slide referenced in the hash", function() {
-        expect(deck.slides[NAMED_SLIDE_INDEX].classList.contains('bespoke-active')).toBe(true);
+        expect(deck.slide()).toBe(NAMED_SLIDE_INDEX);
       });
 
     });
