@@ -1,5 +1,5 @@
 /*!
- * bespoke-hash v1.0.0-beta
+ * bespoke-hash v1.0.0
  *
  * Copyright 2014, Mark Dalgleish
  * This content is released under the MIT license
