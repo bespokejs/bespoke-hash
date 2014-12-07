@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/markdalgleish/bespoke-hash.png?branch=master)](https://travis-ci.org/markdalgleish/bespoke-hash) [![Coverage Status](https://coveralls.io/repos/markdalgleish/bespoke-hash/badge.png)](https://coveralls.io/r/markdalgleish/bespoke-hash)
+[![Build Status](https://img.shields.io/travis/markdalgleish/bespoke-hash/master.svg?style=flat)](http://travis-ci.org/markdalgleish/bespoke-hash) [![Coverage Status](https://img.shields.io/coveralls/markdalgleish/bespoke-hash/master.svg?style=flat)](https://coveralls.io/r/markdalgleish/bespoke-hash)
 
 # bespoke-hash
 
