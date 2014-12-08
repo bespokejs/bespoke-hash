@@ -131,6 +131,30 @@ describe("bespoke-hash", function() {
 
   });
 
+  describe("given a blank hash is present on page load", function() {
+
+    beforeEach(function() {
+      window.location.hash = '';
+    });
+
+    describe("when the deck is created", function() {
+
+      beforeEach(createDeck);
+      afterEach(destroyDeck);
+
+      it("should ignore the hash and activate the first slide", function() {
+        expect(deck.slide()).toBe(0);
+      });
+
+      it("should not break the presentation", function() {
+        deck.next();
+        expect(deck.slide()).toBe(1);
+      });
+
+    });
+
+  });
+
   describe("given a deck has been created", function() {
 
     beforeEach(createDeck);
