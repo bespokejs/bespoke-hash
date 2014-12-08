@@ -64,6 +64,30 @@ describe("bespoke-hash", function() {
 
   });
 
+  describe("given an invalid number hash is present on page load", function() {
+
+    beforeEach(function() {
+      window.location.hash = '100';
+    });
+
+    describe("when the deck is created", function() {
+
+      beforeEach(createDeck);
+      afterEach(destroyDeck);
+
+      it("should ignore the hash and activate the first slide", function() {
+        expect(deck.slide()).toBe(0);
+      });
+
+      it("should not break the presentation", function() {
+        deck.next();
+        expect(deck.slide()).toBe(1);
+      });
+
+    });
+
+  });
+
   describe("given valid name hash is present on page load", function() {
 
     beforeEach(function() {
@@ -77,6 +101,30 @@ describe("bespoke-hash", function() {
 
       it("should activate the slide referenced in the hash", function() {
         expect(deck.slide()).toBe(FIRST_NAMED_SLIDE_INDEX);
+      });
+
+    });
+
+  });
+
+  describe("given an invalid name hash is present on page load", function() {
+
+    beforeEach(function() {
+      window.location.hash = 'invalid-hash';
+    });
+
+    describe("when the deck is created", function() {
+
+      beforeEach(createDeck);
+      afterEach(destroyDeck);
+
+      it("should ignore the hash and activate the first slide", function() {
+        expect(deck.slide()).toBe(0);
+      });
+
+      it("should not break the presentation", function() {
+        deck.next();
+        expect(deck.slide()).toBe(1);
       });
 
     });

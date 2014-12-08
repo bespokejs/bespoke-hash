@@ -29,8 +29,9 @@ module.exports = function() {
       },
 
       activateSlide = function(index) {
-        if (index !== activeIndex) {
-          deck.slide(index);
+        var indexToActivate = -1 < index && index < deck.slides.length ? index : 0;
+        if (indexToActivate !== activeIndex) {
+          deck.slide(indexToActivate);
         }
       };
 
