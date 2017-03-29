@@ -50,6 +50,20 @@ If you'd like to use named hash routes instead, add `data-bespoke-hash` attribut
 </article>
 ```
 
+Alternatively, you can specify the value using `id` attributes in your slide markup.
+
+```html
+<article>
+  <section id="catchy-title"></section>
+  <section id="shameless-plug"></section>
+  <section id="controversial-statement"></section>
+  <section id="explanation-of-controversial-statement"></section>
+  <section id="shameless-self-promotion"></section>
+</article>
+```
+
+If both the `data-bespoke-hash` and `id` attributes are used, `data-bespoke-hash` wins. When looking for a match, the plugin consults the `data-bespoke-hash` attribute on a slide first, then the `id` attribute.
+
 ## Package managers
 
 ### npm
