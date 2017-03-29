@@ -1,15 +1,15 @@
-[![Build Status](https://img.shields.io/travis/markdalgleish/bespoke-hash/master.svg?style=flat)](http://travis-ci.org/markdalgleish/bespoke-hash) [![Coverage Status](https://img.shields.io/coveralls/markdalgleish/bespoke-hash/master.svg?style=flat)](https://coveralls.io/r/markdalgleish/bespoke-hash)
+[![Build Status](https://img.shields.io/travis/bespokejs/bespoke-hash/master.svg?style=flat)](http://travis-ci.org/bespokejs/bespoke-hash) [![Coverage Status](https://img.shields.io/coveralls/bespokejs/bespoke-hash/master.svg?style=flat)](https://coveralls.io/r/bespokejs/bespoke-hash)
 
 # bespoke-hash
 
-Hash Routing for [Bespoke.js](https://github.com/markdalgleish/bespoke.js)
+Hash Routing for [Bespoke.js](https://github.com/bespokejs/bespoke.js)
 
 ## Download
 
 Download the [production version][min] or the [development version][max], or use a [package manager](#package-managers).
 
-[min]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.min.js
-[max]: https://raw.github.com/markdalgleish/bespoke-hash/master/dist/bespoke-hash.js
+[min]: https://raw.github.com/bespokejs/bespoke-hash/master/dist/bespoke-hash.min.js
+[max]: https://raw.github.com/bespokejs/bespoke-hash/master/dist/bespoke-hash.js
 
 ## Usage
 
@@ -80,7 +80,7 @@ $ bower install bespoke-hash
 
 ## Credits
 
-This plugin was built with [generator-bespokeplugin](https://github.com/markdalgleish/generator-bespokeplugin).
+This plugin was built with [generator-bespokeplugin](https://github.com/bespokejs/generator-bespokeplugin).
 
 ## License
 
