@@ -1,7 +1,7 @@
 /*!
  * bespoke-hash v1.0.2
  *
- * Copyright 2014, Mark Dalgleish
+ * Copyright 2017, Mark Dalgleish
  * This content is released under the MIT license
  * http://mit-license.org/markdalgleish
  */
